@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% comment %} 引入 CSS {% endcomment %}
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'custom-carousel.css' | asset_url | stylesheet_tag }}
     {{content_for_header}}
+
 </head>
 <body>
-    {{content_for_layout}}
+
+    {% section 'annoucement-bar' %}
+    {% section 'header' %}
+
+    <main id="MainContent" class="" role="main" tabindex="-1">
+        {{content_for_layout}}
+    </main>
+
+
+    {% comment %} 引入JS {% endcomment %}
+    <script src="{{ 'jquery.js' | asset_url }}" defer></script>
+    <script src="{{ 'bootstrap.bundle.min.js' | asset_url }}" defer></script>
 </body>
 </html>

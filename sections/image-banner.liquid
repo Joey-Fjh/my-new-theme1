@@ -1,0 +1,78 @@
+<div id="mainCarousel-{{ section.id }}" class="carousel slide rounded-4 overflow-hidden" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      {% for block in section.blocks %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 1200 | image_tag: class: 'd-block w-100', alt: block.settings.heading }}
+          {% else %}
+            <img src="{{ 'bannel.jpg' | asset_url }}" class="d-block w-100" alt="{{ block.settings.heading }}" width="1200" height="1200">
+          {% endif %}
+          <div class="carousel-caption text-start">
+            <h2 class="fw-bold display-5">{{ block.settings.heading }}</h2>
+            <p class="lead">{{ block.settings.description }}</p>
+            {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" class="btn btn-dark btn-lg rounded-pill px-4">{{ block.settings.button_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel-{{ section.id }}" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-white rounded-circle shadow" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel-{{ section.id }}" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-white rounded-circle shadow" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Custom Carousel",
+    "max_blocks": 6,
+    "settings": [],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Banner Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Wear the Moment,\nOwn the Style"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "Embrace Every Moment With Confidence And Let Your Fashion Reflect Your Personality. Style Is More Than Just Clothing."
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "SHOP NOW"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Carousel",
+        "category": "Image"
+      }
+    ]
+  }
+  {% endschema %} 

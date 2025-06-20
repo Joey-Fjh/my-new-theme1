@@ -1,0 +1,8 @@
+/* assets/theme.css.liquid 
+1. 覆盖 Bootstrap 默认样式
+2. 动态读取shopify设置
+*/
+
+:root {
+  --bs-primary: {{ settings.primary_color }}; /* 从后台读取颜色 */
+}

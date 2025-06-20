@@ -1,1 +1,63 @@
-{}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "sections": {
+      "annoucement-bar": {
+        "type": "annoucement-bar",
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "menu": "main-menu"
+        }
+      },
+      "image-banner": {
+        "type": "image-banner",
+        "blocks": {
+          "slide_nFhh6C": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/woman-in-the-city_925x_d08649fe-d855-4dce-af11-69d80d443cef.jpg",
+              "heading": "Wear the Moment,\nOwn the Style",
+              "description": "Embrace Every Moment With Confidence And Let Your Fashion Reflect Your Personality. Style Is More Than Just Clothing.",
+              "button_text": "SHOP NOW",
+              "button_link": "shopify://products/black-leather-bag"
+            }
+          },
+          "slide_qkhDX8": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify://shop_images/rack-of-womens-clothing.jpg",
+              "heading": "Wear the Moment,Own the Style",
+              "description": "Embrace Every Moment With Confidence And Let Your Fashion Reflect Your Personality. Style Is More Than Just Clothing22.",
+              "button_text": "SHOP NOW",
+              "button_link": "shopify://products/blue-silk-tuxedo"
+            }
+          }
+        },
+        "block_order": [
+          "slide_nFhh6C",
+          "slide_qkhDX8"
+        ],
+        "settings": {}
+      },
+      "featured_collection": {
+        "type": "featured_collection",
+        "settings": {
+          "title": "Featured products",
+          "collection": "夏季产品系列"
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}

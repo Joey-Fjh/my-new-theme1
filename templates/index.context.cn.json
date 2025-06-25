@@ -8,15 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "type": "header",
-  "name": "t:general.header",
-  "sections": {
-    "header": {
-      "type": "header",
-      "settings": {}
-    }
+  "parent": "index.json",
+  "context": {
+    "market": "cn"
   },
-  "order": [
-    "header"
-  ],
+  "sections": {}
 }

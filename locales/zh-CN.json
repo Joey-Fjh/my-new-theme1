@@ -1,0 +1,61 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "404": {
+    "not_found": "未找到页面。",
+    "back_to_shopping": "返回购物",
+    "title": "404"
+  },
+  "blog": {
+    "article_comments": "评论",
+    "comment_form_body": "评论",
+    "comment_form_email": "电子邮件",
+    "comment_form_name": "姓名",
+    "comment_form_submit": "邮政",
+    "comment_form_title": "添加评论",
+    "article_metadata_html": "{{ date }}  {{ author }}"
+  },
+  "cart": {
+    "checkout": "查看",
+    "title": "购物车",
+    "update": "更新",
+    "remove": "消除"
+  },
+  "customers": {
+    "login": {
+      "email": "电子邮件",
+      "password": "密码",
+      "submit": "登入",
+      "title": "登录"
+    }
+  },
+  "collections": {
+    "title": "收藏"
+  },
+  "gift_card": {
+    "add_to_apple_wallet": "添加到 Apple 钱包",
+    "card": "礼品卡",
+    "expired": "此礼品卡已过期",
+    "expires_on": "有效期至{{ expires_on }}",
+    "use_at_checkout": "结账时使用此礼品卡"
+  },
+  "password": {
+    "title": "本店为私人店铺",
+    "password": "密码",
+    "enter": "进入"
+  },
+  "search": {
+    "title": "搜索",
+    "placeholder": "搜索文章、页面或产品",
+    "submit": "搜索",
+    "no_results_html": "未找到{{ terms }}的结果",
+    "results_for_html": "{{ count }}  {{ terms }}"
+  }
+}
